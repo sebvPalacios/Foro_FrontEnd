@@ -16,7 +16,7 @@ COPY . .
 RUN npm run build
 
 FROM nginx:1.23.3 AS prod
-EXPOSE 8080
+EXPOSE 80
 
 COPY --from=builder /app/dist/foro_ang_fsiii/ /usr/share/nginx/html
 
