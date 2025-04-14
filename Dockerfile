@@ -1,4 +1,4 @@
-FROM node:18.17.1 AS dev-deps
+FROM node:18.20.0 AS dev-deps
 
 WORKDIR /app
 
