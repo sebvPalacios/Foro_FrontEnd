@@ -8,7 +8,7 @@ import { Publicacion } from '../models/publicacion';
 })
 export class PublicacionService {
 
-  private apiUrl = 'http://ip172-18-0-8-cvum7tqim2rg00ddvqr0-8080.direct.labs.play-with-docker.com/publicaciones';
+  private apiUrl = 'http://ip172-18-0-4-cvunemol2o9000cqibcg-8080.direct.labs.play-with-docker.com/publicaciones';
 
   constructor(private http: HttpClient) { }
 

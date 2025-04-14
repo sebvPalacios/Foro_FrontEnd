@@ -9,7 +9,7 @@ import { Usuario } from '../models/usuario';
 
 export class UsuarioService {
 
-  private apiUrl = 'http://ip172-18-0-8-cvum7tqim2rg00ddvqr0-8080.direct.labs.play-with-docker.com/usuarios';
+  private apiUrl = 'http://ip172-18-0-4-cvunemol2o9000cqibcg-8080.direct.labs.play-with-docker.com/usuarios';
 
   constructor(private http: HttpClient) { }
 
