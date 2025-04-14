@@ -18,6 +18,6 @@ RUN npm run build
 FROM nginx:1.23.3 AS prod
 EXPOSE 80
 
-COPY --from=builder /app/dist/app-web/browser/ /usr/share/nginx/html
+COPY --from=builder /app/dist/foro_ang_fsiii/ /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]
