@@ -1,0 +1,48 @@
+<!-- src/app/components/login/login.component.html -->
+<div class="container">
+  <div class="row justify-content-center">
+    <form id="frmLogin" class="mt-5" [formGroup]="frmLogin" (ngSubmit)="onSubmit()">
+
+      <!-- Titulo -->
+      <div id="contenedorTitulo" class="row mb-3">
+        <div id="titulo" class="col">
+            <h1>Login Usuario</h1>
+        </div>
+      </div> 
+
+      <div class="row mb-1 justify-content-center">
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" formControlName="correo" />
+      </div>
+
+      <div class="row mb-1 justify-content-center">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" formControlName="password" />
+      </div>
+
+      <!-- Editar button -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-8">
+          <button id="btnIniciarSesion" class="btn btn-primary" type="submit">Iniciar sesión</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<!-- 
+
+<h2>Login</h2>
+<form [formGroup]="frmLogin" (ngSubmit)="onSubmit()">
+
+  
+
+  <br />
+
+  
+</form>
+
+-->
+
+

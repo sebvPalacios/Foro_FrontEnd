@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div id="contenedorDetalles" class="mt-5">
+
+            <!-- Titulo -->
+            <div id="contenedorTitulo" class="row mb-3">
+                <div id="titulo" class="col">
+                    <h1>Detalle Usuario</h1>
+                </div>
+            </div>
+
+             <!-- Usuario -->
+             <div class="row mb-1 justify-content-center">
+                <h3 class="col-3 col-form-label">Nombre:</h3>
+                <label class="col-9 col-form-label">{{ usuario.nombre }}</label>
+            </div>
+
+            <div class="row mb-1 justify-content-center">
+                <h3 class="col-3 col-form-label">Apellido: </h3>
+                <label class="col-9 col-form-label">{{ usuario.apellido }}</label>
+            </div>
+
+            <div class="row mb-1 justify-content-center">
+                <h3 class="col-3 col-form-label">Correo:</h3>
+                <label class="col-9 col-form-label">{{ usuario.correo }}</label>
+            </div>
+
+            <div class="row mb-1 justify-content-center">
+                <h3 class="col-3 col-form-label">Rol:</h3>
+                <label class="col-9 col-form-label">{{ usuario.rol }}</label>
+            </div>
+
+            <!-- Editar button -->
+            <div class="row justify-content-center mt-4">
+                <div class="col-8">
+                    <button id="btnEditar" class="btn btn-primary" (click)="irAEditar()">Editar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

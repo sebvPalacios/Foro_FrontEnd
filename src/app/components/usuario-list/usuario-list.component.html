@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row justify-content-center">
+
+        <!-- Titulo -->
+        <div id="contenedorTitulo" class="row">
+            <div id="titulo" class="col">
+                <h1>Lista de Usuarios</h1>
+            </div>
+        </div>
+
+        <!-- Usuarios -->
+        <ul class="list-group">
+            <li *ngFor="let usuario of usuarios" (click)="onUsuarioSelected(usuario)"
+                class="list-group-item list-group-item-action" style="cursor: pointer;">
+                <div class="row">
+                    <div class="col-2"><strong>ID:</strong> {{ usuario.id }}</div>
+                    <div class="col-10"><strong>Nombre:</strong> {{ usuario.nombre }}</div>
+                </div>
+            </li>
+        </ul>
+
+        <ng-template #noData>
+            <p>No hay datos disponibles</p>
+        </ng-template>
+
+    </div>
+</div>

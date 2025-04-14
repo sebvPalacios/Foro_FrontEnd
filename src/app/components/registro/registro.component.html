@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <form id="frmRegistro" class="mt-5" [formGroup]="frmRegistro" (ngSubmit)="onSubmit()">
+
+            <!-- Titulo -->
+            <div id="contenedorTitulo" class="row mb-3">
+                <div id="titulo" class="col">
+                    <h1>Registrarse</h1>
+                </div>
+            </div>
+
+            <div class="row mb-1 justify-content-center">
+                <label>Nombre:</label>
+                <input type="text" formControlName="nombre" />
+            </div>
+
+            <div class="row mb-1 justify-content-center">
+                <label>Apellido:</label>
+                <input type="text" formControlName="apellido" />
+            </div>
+
+            <div class="row mb-1 justify-content-center">
+                <label>Correo:</label>
+                <input type="email" formControlName="correo" />
+            </div>
+
+            <div class="row mb-1 justify-content-center">
+                <label>Contraseña:</label>
+                <input type="password" formControlName="password" />
+            </div>
+
+            <!-- Editar button -->
+            <div class="row justify-content-center mt-4">
+                <div class="col-8">
+                    <button id="btnRegistrarse" class="btn btn-primary" type="submit">Registrarse</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
