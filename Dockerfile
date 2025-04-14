@@ -6,7 +6,7 @@ COPY package.json package.json
 
 RUN npm install
 
-FROM node:18.17.1 AS builder
+FROM node:18.20.0 AS builder
 
 WORKDIR /app
 
